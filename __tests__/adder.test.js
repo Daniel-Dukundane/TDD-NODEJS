@@ -1,6 +1,9 @@
 const adder = require("../utils/adder");
 
 describe("Adder Function", () => {
+    it("Should return zero on an error", () => {
+        expect(adder()).toBe(0);
+    });
     it("Should add one number", () => {
         expect(adder(1)).toBe(1);
     });
